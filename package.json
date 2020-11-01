@@ -1,0 +1,43 @@
+{
+  "name": "ws_test",
+  "version": "1.0.0",
+  "description": "Williams-Sonoma, Inc. Front-End Coding Challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "test": "mocha -r esm --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magisteron/wstest.git"
+  },
+  "author": "Sergey Vlasov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magisteron/wstest/issues"
+  },
+  "homepage": "https://github.com/magisteron/wstest#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "chai": "^4.2.0",
+    "css-loader": "^5.0.0",
+    "esm": "^3.2.25",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.2.1",
+    "mocha": "^8.2.0",
+    "sass": "^1.28.0",
+    "sass-loader": "^10.0.4",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5"
+  }
+}
