@@ -18,7 +18,7 @@ Start building:
 ***npm run-script build***
 
 Tests:
-**npm test**
+***npm test***
 <hr>
 Just a demo.<br>
 Many checks for the correctness of the sent data were not done, since all options are not known.<br>
