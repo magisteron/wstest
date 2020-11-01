@@ -1,3 +1,7 @@
+/**
+ * Read Data from server
+ */
+
 export const getData = async () => {
 
     const getResource = async (url) => {

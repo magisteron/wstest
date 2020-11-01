@@ -1,5 +1,11 @@
-export const Main = (data) => {
+/**
+ * Create Main Page Content
+ */
 
+export const Main = (data) => {
+/**
+ * Create Products List
+ */
     let list = '';
     for (let element of data.groups){
         let price = '';
@@ -16,7 +22,9 @@ export const Main = (data) => {
             </a>
         `;
     }
-
+/**
+ * Create Pagination
+ */
     let pagination = '';
     if (data.totalPages > 1 && data.totalPages < 6){
         for(let i = 1; i <= data.totalPages; i++){
@@ -37,7 +45,9 @@ export const Main = (data) => {
         ${pagination}
         <a href="#" class="pagination_item"><i class="fas fa-chevron-right"></i></a>
     `;
-
+/**
+ * Return Template
+ */
     return `
         <header>
             <div class="container header_container">

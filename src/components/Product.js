@@ -1,5 +1,12 @@
+/**
+ * Create Product Info Content
+ */
 export const Product = (data) => {
-    console.log(data)
+
+/**
+ * Create Slider Elements
+ */
+
     let i = 1;
     let hero = `<span data-slide="0" class="product_info_hero_slide active" style="background-image: url('${data.hero.href}')"></span>`;
     let points = '<span data-slide="0" class="product_info_hero_point active"></span>';
@@ -12,7 +19,9 @@ export const Product = (data) => {
         `;
         i++;
     }
-
+/**
+ * Create Slider Controls
+ */
     let controls = '';
     if (i > 1){
         controls = `
@@ -26,7 +35,10 @@ export const Product = (data) => {
     else {
         points = '';
     }
-
+/**
+ * Create Prices
+ * Yes. a little ugly. But the logic of displaying the price in json raises questions
+ */
     let price = '';
     if (typeof data.price !== 'undefined'){
         if (data.price.selling === data.price.regular){
@@ -62,7 +74,9 @@ export const Product = (data) => {
             `;
         }
     }
-
+/**
+ * Return Template
+ */
     return {
         html: `
             <div class="product_info_hero">
