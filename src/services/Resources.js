@@ -7,6 +7,6 @@ export const getData = async () => {
         }
         return await res.json();
     };
-    return await getResource(`http://localhost:8081/json/index.json`);
-//    return await getResource(`https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json`);
+//    return await getResource(`http://localhost:8081/json/index.json`);
+    return await getResource(`https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json`);
 }
